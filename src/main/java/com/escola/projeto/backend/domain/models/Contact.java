@@ -1,12 +1,10 @@
-package com.escola.projeto.backend.models;
+package com.escola.projeto.backend.domain.models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-
-import java.time.LocalDateTime;
 
 @Entity
 @Builder
@@ -16,6 +14,7 @@ import java.time.LocalDateTime;
 public class Contact {
 
     @Id
+    @EqualsAndHashCode.Include
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
