@@ -1,4 +1,4 @@
-package com.escola.projeto.backend.models;
+package com.escola.projeto.backend.domain.models;
 
 import com.escola.projeto.backend.enums.Gender;
 import com.escola.projeto.backend.enums.Role;
@@ -15,6 +15,7 @@ import java.time.LocalDateTime;
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Master {
     @Id
+    @EqualsAndHashCode.Include
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
