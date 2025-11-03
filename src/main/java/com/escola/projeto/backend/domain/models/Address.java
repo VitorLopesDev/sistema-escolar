@@ -1,14 +1,18 @@
 package com.escola.projeto.backend.domain.models;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "adresses")
+@Table(name = "tb_adress")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Address {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @Column(nullable = false)
     private String zip;
