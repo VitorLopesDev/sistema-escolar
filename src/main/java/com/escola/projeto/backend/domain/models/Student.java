@@ -11,8 +11,8 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "tb_student")
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
